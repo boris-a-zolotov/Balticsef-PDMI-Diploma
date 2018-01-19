@@ -18,48 +18,67 @@
   \fancyhead{}
 
 \definecolor{linegray}{RGB}{230,230,230}
+\definecolor{schoolblack}{RGB}{120,120,120}
 \def\lg{\textcolor{linegray}}
+\def\bl{\textcolor{black}}
+\def\sbl{\textcolor{schoolblack}}
 
 \def\fs#1{\fontsize{#1pt}{26pt}\selectfont}
 \begin{document} \ \vfill\eject
+
 
 %%Тело
 \begin{center}
 \ \vspace{2.5cm}
 
 	{\fs{21} награждается} \\ [1cm]
-	{\fs{30} \lg{\underline{\hspace{13cm}}},} \\ [0.8cm]
-	{\fs{21} \itshape учащийся\ \ 
-		\lg{\underline{{\tiny\rm школа}\hspace{2.6cm}{\tiny\rm нас.\,пункт}\hspace{3.8cm}}}{\rm ,}}
-			\\ [1.7cm]
 
-	{\fs{21} за представленный на} \\ [0.55cm]
-	{\fs{21} XIV Балтийском научно-инженерном конкурсе,} \\ [0.55cm]
-	{\fs{21} секция {\bfseries «Математика»},} \\ [0.65cm]
-	{\fs{21} проект} \\ [0.7cm]
+	{\fs{30}
+		\lg{\underline{\hspace{13cm}}}
+	} \\ [0.8cm]
+
+	{\fs{21}
+		\itshape учащийся\ \ 
+		\lg{
+			\underline{{\tiny\it\sbl{школа}}
+				\hspace{2.6cm}
+				{\tiny\it\sbl{нас.\,пункт}}
+				\hspace{3.8cm}}
+		}
+	} \\ [1.7cm]
+
+	{\fs{21}
+		за представленный проект
+	} \\ [0.7cm]
 
 	{\fs{30} \hspace{-0.2cm}{\normalsize «}\lg{\underline{\hspace{15cm}}}} \\ [0.9cm]
-	{\fs{30} \hspace{0.2cm}\lg{\underline{\hspace{15cm}}}{\normalsize »}} \\
+	{\fs{30} \hspace{0.2cm}\lg{\underline{\hspace{15cm}}}{\normalsize »}} \\ [1.1cm]
 
-\ \\ [2.7cm]
+	{\fs{21} на секции {\bfseries «Математика»}} \\ [0.55cm]
+	{\fs{21} на XIV Балтийском научно-инженерном конкурсе} \\ [2.85cm]
+
 \end{center}
 
-%% Подписи
-\begin{center}
-	\begin{tabular}{lll}
-		\lg{\underline{\hspace{3.2cm}}}\ \ \ \ &
-			\makecell{\fs{9} Директор ПОМИ, \\
-			  \fs{9} профессор, д.\,ф.-м.\,н., \\
-			  \fs{9} академик РАН} &
-				\ \fs{11} \makecell{С.В.\,Кисляков} \\
-	 & & \\
-		\lg{\underline{\hspace{3.2cm}}}\ \ \ \ &
-			\makecell{\fs{9} Ведущий науч.\,сотрудник ПОМИ, \\
-			  \fs{9} профессор, д.\,ф.-м.\,н.} &
-				\ \fs{11} \makecell{А.И.\,Назаров} \\					
-	\end{tabular} \\ [1.1cm]
 
-\fs{15} 8 февраля 2018, город Санкт-Петербург
+%% Подписи
+\def\podpis{\ \ \ \lg{\underline{\hspace{8.2cm}}}\ \ \ \ }
+
+\begin{center}
+	\begin{tabular}{lcr}
+		\makecell{\fs{9} Директор ПОМИ, \\ \fs{9} академик РАН}
+		& \podpis &
+		\fs{11} С.В.\,Кисляков \\
+	 & & \\
+		\makecell{\fs{9} Председатель жюри, \\ \fs{9} профессор, д.\,ф.-м.\,н.}
+		& \podpis &
+		\fs{11} А.И.\,Назаров \\					
+	\end{tabular} \\ [1.3cm]
+
+	\begin{tabular}{lcr}
+		\makecell{\fs{12} Санкт-Петербург \smallskip \\ \fs{12} 8 февраля 2018 г.} &
+		\hspace{5.05cm} &
+		\fs{12} Рег. № \lg{\underline{\hspace{4.8cm}}} \\
+	\end{tabular}
 \end{center}
 
 \end{document}
